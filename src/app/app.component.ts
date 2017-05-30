@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+
+  private title: String = 'My Awesome TODO List';
+  private mySearchInput: String;
+  private selectedTab: String = 'TODO';
+
+  selectTab(name: String) {
+    this.selectedTab = name;
+  }
+
 }

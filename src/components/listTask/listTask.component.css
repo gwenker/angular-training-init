@@ -1,0 +1,28 @@
+div {
+    margin-top: 15px;
+}
+
+.formfield-checkbox {
+    position: relative;
+}
+
+.formfield-checkbox input[type="checkbox"] {
+    visibility: hidden; 
+    position: absolute; top: 0; left: 0;
+}
+
+.formfield-checkbox input[type="checkbox"] + label {
+    padding: 4px 0 0 24px;
+    cursor: pointer;
+}
+
+.formfield-checkbox input[type="checkbox"] + label:before {
+    content: " ";
+    display: inline-block; width: 20px; height: 20px;
+    position: absolute; top: 0; left: 0;
+    background: transparent url(/assets/sprite.svg) 0 -30px no-repeat;
+}
+
+.formfield-checkbox input[type="checkbox"]:checked + label:before {
+    background-position: -30px -30px;
+}

@@ -1,0 +1,3 @@
+<div *ngFor='let task of (tasks | searchFilter:search)' class="formfield-checkbox">
+    <input id='{{task.id}}' type='checkbox' [checked]='task.selected' /> <label for='{{task.id}}'>{{task.name}}</label>
+</div>

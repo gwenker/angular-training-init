@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+.loader{
+ position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('https://s-media-cache-ak0.pinimg.com/originals/90/80/60/9080607321ab98fa3e70dd24b2513a20.gif') 50% 50% no-repeat #172025;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: #172025;
+    color: white;
+    font-family:'Roboto';
+    padding: 10px 50px 50px;
+}
+
