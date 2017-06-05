@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.css";
+
+
 .loader{
  position: fixed;
   left: 0px;
@@ -14,9 +18,9 @@ html {
 }
 
 body {
+    font-family: 'Indie Flower', cursive!important;
     background: #172025;
     color: white;
-    font-family:'Roboto';
     padding: 10px 50px 50px;
+    word-spacing: 1em;
 }
-

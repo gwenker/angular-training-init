@@ -6,7 +6,8 @@ import { TaskService } from '../../service/Task.service';
 
 @Component({
     selector: 'app-tab-todo',
-    templateUrl: './tabTodo.component.html'
+    templateUrl: './tabTodo.component.html',
+    styleUrls: ['./tabTodo.component.css']
 })
 export class TabTodoComponent {
 

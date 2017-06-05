@@ -7,11 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  private title: String = 'My Awesome TODO List';
+  private title: string = "My Awesome TODO List";
   private mySearchInput: String;
-  private selectedTab: String = 'TODO';
+  private selectedTab: string = String('TODO');
 
-  selectTab(name: String) {
+  selectTab(name: string) {
     this.selectedTab = name;
   }
 

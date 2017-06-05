@@ -1,6 +1,7 @@
-<div>
-    <form name='myAddForm' (ngSubmit)='addTask()'>
-        <input name='inputAdd' placeholder='Enter task name...' [(ngModel)]='taskName' />
-        <button type='submit'>Add Task</button>
-    </form>
+<div class="input-group">
+    <input class="form-control" name='inputAdd' placeholder='Enter task name...' [(ngModel)]='taskName' />
+    <span class="input-group-btn">
+            <button class="btn btn-default" type='submit' (click)='addTask()'>
+                <i class="fa fa-plus-circle" aria-hidden="true"></i> Add Task</button>
+    </span>
 </div>

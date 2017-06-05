@@ -1,7 +1,8 @@
-<div>
-    <p *ngIf='search'>Search active on : {{search}}</p>
-</div>
-
 <app-add-task (addTaskEvent)='refreshListTask($event)'></app-add-task>
 
 <app-list-task [tasks]='tasks' [search]='search'></app-list-task>
+
+<div class='active-search'>
+    <p *ngIf='search'>Search active : {{search}}</p>
+    <p *ngIf='!search'>No active search</p>
+</div>

@@ -1,9 +1,0 @@
-input {
-    width: 90%;
-    transition: box-shadow .5s,border-color .25s ease-in-out;
-}
-
-button {
-    width: 9%;
-    transition: box-shadow .5s,border-color .25s ease-in-out;
-}

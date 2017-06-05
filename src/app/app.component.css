@@ -2,6 +2,10 @@ h1 {
     text-align: center;
 }
 
+div button {
+    font-family: 'Indie Flower', cursive!important;
+}
+
 div.tab {
     overflow: hidden;
     background-color: #f1f1f1;
