@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  private title: string = "My Awesome TODO List";
-  private mySearchInput: String;
+  private title: string = String('My Awesome TODO List');
+  private mySearchInput: string;
   private selectedTab: string = String('TODO');
 
   selectTab(name: string) {

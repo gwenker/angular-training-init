@@ -9,7 +9,12 @@
   <button class='tablinks' [class.active]='selectedTab=="ARCHIVE"' (click)='selectTab("ARCHIVE")'> ARCHIVE </button>
 </div>
 
+<!--
 <div [ngSwitch]="selectedTab" class='tabcontent'>
   <app-tab-todo *ngSwitchCase='"TODO"' [search]='mySearchInput'></app-tab-todo>
   <app-tab-archive *ngSwitchCase='"ARCHIVE"' [search]='mySearchInput'></app-tab-archive>
+</div>
+-->
+<div class='tabcontent'>
+  <router-outlet></router-outlet>
 </div>
