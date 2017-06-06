@@ -1,10 +1,8 @@
 export class Task {
     id: number;
     name: string;
-    selected: boolean;
 
-    constructor(name: string, selected?: boolean) {
+    constructor(name: string) {
         this.name = name;
-        this.selected = selected;
     }
 }

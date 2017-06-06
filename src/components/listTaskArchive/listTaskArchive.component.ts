@@ -7,22 +7,15 @@ import * as taskActions from '../../store/task.action';
 import { Task } from '../../model/Task';
 
 @Component({
-    selector: 'app-list-task',
-    templateUrl: './listTask.component.html',
-    styleUrls: ['./listTask.component.css']
+    selector: 'app-list-task-archive',
+    templateUrl: './listTaskArchive.component.html',
+    styleUrls: ['./listTaskArchive.component.css']
 })
-export class ListTaskComponent {
+export class ListTaskArchiveComponent {
 
     @Input()
     private tasks: Task[];
 
     @Input()
     private search: string;
-
-    constructor(private store: Store<fromRoot.State>) {
-    }
-
-    completeTask(task: Task) {
-        this.store.dispatch(new taskActions.Archive(task));
-    }
 }

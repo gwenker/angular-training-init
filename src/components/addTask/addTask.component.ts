@@ -1,8 +1,10 @@
 import { Component, Output, EventEmitter } from '@angular/core';
+import { Store } from '@ngrx/store';
+
+import * as fromRoot from '../../store/';
+import * as taskActions from '../../store/task.action';
 
 import { Task } from '../../model/Task';
-
-import { TaskService } from '../../service/Task.service';
 
 @Component({
     selector: 'app-add-task',
@@ -11,16 +13,11 @@ import { TaskService } from '../../service/Task.service';
 export class AddTaskComponent {
     private taskName: string;
 
-    @Output()
-    private addTaskEvent: EventEmitter<string> = new EventEmitter();
-
-    constructor(private taskService: TaskService) { }
+    constructor(private store: Store<fromRoot.State>) { }
 
     addTask() {
         if (this.taskName) {
-            this.taskService.addTask(new Task(this.taskName));
-            this.addTaskEvent.emit(this.taskName);
-            console.log('Add task');
+            this.store.dispatch(new taskActions.AddTask(new Task(this.taskName)));
         }
     }
 }

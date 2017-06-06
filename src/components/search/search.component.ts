@@ -1,4 +1,8 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Store } from '@ngrx/store';
+
+import * as fromRoot from '../../store/';
+import * as taskActions from '../../store/task.action';
 
 @Component({
     selector: 'app-search',
@@ -9,16 +13,15 @@ export class SearchComponent {
 
     mySearchInputValue: string;
 
-    @Output()
-    mySearchInputChange: EventEmitter<string> = new EventEmitter();
+    constructor(private store: Store<fromRoot.State>) {
+    }
 
-    @Input()
     get mySearchInput() {
         return this.mySearchInputValue;
     }
 
     set mySearchInput(val: string) {
         this.mySearchInputValue = val;
-        this.mySearchInputChange.emit(this.mySearchInputValue);
+        this.store.dispatch(new taskActions.SetFilter(val));
     }
 }

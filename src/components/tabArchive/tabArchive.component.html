@@ -1,0 +1,6 @@
+<app-list-task-archive [tasks]='tasks' [search]='search'></app-list-task-archive>
+
+<div class='active-search'>
+    <p *ngIf='search'>Search active : {{search}}</p>
+    <p *ngIf='!search'>No active search</p>
+</div>

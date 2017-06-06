@@ -2,12 +2,12 @@
   {{title}}
 </h1>
 
-<app-search [(mySearchInput)]='mySearchInput'></app-search>
+<app-search></app-search>
 
-<div class='tab'>
-  <button class='tablinks' [class.active]='selectedTab=="TODO"' (click)='selectTab("TODO")'> TODO </button>
-  <button class='tablinks' [class.active]='selectedTab=="ARCHIVE"' (click)='selectTab("ARCHIVE")'> ARCHIVE </button>
-</div>
+<nav class='tab'>
+  <a routerLink="/todoTab" routerLinkActive="active">TODO</a>
+  <a routerLink="/archiveTab" routerLinkActive="active">ARCHIVE</a>
+</nav>
 
 <!--
 <div [ngSwitch]="selectedTab" class='tabcontent'>

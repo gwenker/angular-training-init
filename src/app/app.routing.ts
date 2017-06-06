@@ -11,6 +11,6 @@ export const routes: Routes = [
         path: 'todoTab', component: TabTodoComponent
     },
     {
-        path: 'todoArchive', component: TabArchiveComponent
+        path: 'archiveTab', component: TabArchiveComponent
     }
 ];

@@ -1,0 +1,12 @@
+div {
+    margin-top: 15px;
+}
+
+.formfield-checkbox {
+    position: relative;
+    border-bottom: solid 1px lightgray;
+}
+
+.formfield-checkbox label {
+    text-decoration: line-through;
+}
