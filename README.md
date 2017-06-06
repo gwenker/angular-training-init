@@ -5,4 +5,4 @@ Run :
 npm install
 npm start
 
-Load page : http://localhost:4400/
+Load page : http://localhost:4200/
