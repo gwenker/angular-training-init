@@ -2,7 +2,7 @@
 Empty projet to train with Angular
 
 Run :
-npm install
-npm start
+* npm install
+* npm start
 
 Load page : http://localhost:4200/
